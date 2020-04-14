@@ -52,7 +52,7 @@ class App extends Component {
       capitalGainTaxRate: this.state.capitalGainTaxRate
 
     }
-    axios.post(`http://localhost:5000/calculateProfit`, dataToSend)
+    axios.post(`http://3.22.186.94:5000/calculateProfit`, dataToSend)
       .then(response => {
         console.log("response-->", response)
         if(response.status === 200) {
